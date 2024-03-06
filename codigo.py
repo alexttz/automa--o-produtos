@@ -22,3 +22,7 @@ pyautogui.click(x=1043, y=405)
 pyautogui.write("automatizadorpython@email.com")
 pyautogui.press("tab")
 pyautogui.write("123456789@")
+pyautogui.click(x=1274, y=568)
+
+#Pausa para carregamento
+time.sleep(3)
