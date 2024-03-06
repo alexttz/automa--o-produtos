@@ -17,5 +17,8 @@ pyautogui.press("enter")
 #Pausa para carregamento
 time.sleep(3)
 
-#Realizar login
+#Realizar login (email e senha)
 pyautogui.click(x=1043, y=405)
+pyautogui.write("automatizadorpython@email.com")
+pyautogui.press("tab")
+pyautogui.write("123456789@")
