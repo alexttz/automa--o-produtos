@@ -1,16 +1,19 @@
 import pyautogui
+import time
 
 #Variáveis
 link = "https://dlp.hashtagtreinamentos.com/python/intensivao/login"
 
+pyautogui.PAUSE = 0.5
+
 #Abrir o navegador Chrome:
 pyautogui.press("win")
-pyautogui.PAUSE = 1
 pyautogui.write("chrome")
-pyautogui.PAUSE = 1
 pyautogui.press("enter")
-pyautogui.PAUSE = 1
 
 pyautogui.write(link)
-pyautogui.PAUSE = 1
 pyautogui.press("enter")
+
+#Pausa para carregamento
+
+time.sleep(3)
