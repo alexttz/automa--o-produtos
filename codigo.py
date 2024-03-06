@@ -29,6 +29,6 @@ time.sleep(3)
 
 #Importar dados
 import pandas
-tabela = pandas.read_csv('produtos.csv')
+tabela = pandas.read_csv('automacao-produtos/produtos.csv')
 
 print(tabela)
