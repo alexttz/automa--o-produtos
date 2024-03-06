@@ -15,5 +15,7 @@ pyautogui.write(link)
 pyautogui.press("enter")
 
 #Pausa para carregamento
-
 time.sleep(3)
+
+#Realizar login
+pyautogui.click(x=1043, y=405)
