@@ -34,30 +34,28 @@ tabela = pandas.read_csv('automacao-produtos/produtos.csv')
 #Escrevendo os produtos
 
 for linha in tabela.index:
-
-    codigo = tabela.loc[linha, "codigo"]
     
     pyautogui.click(x=1077, y=293)
 
-    pyautogui.write(codigo)
+    pyautogui.write(tabela.loc[linha, "codigo"])
     pyautogui.press("tab")
  
-    pyautogui.write("Marca")
+    pyautogui.write(tabela.loc[linha, "marca"])
     pyautogui.press("tab")
 
-    pyautogui.write("Tipo")
+    pyautogui.write(tabela.loc[linha, "tipo"])
     pyautogui.press("tab")
 
-    pyautogui.write("Categoria")
+    pyautogui.write(tabela.loc[linha, "categoria"])
     pyautogui.press("tab")
 
-    pyautogui.write("Preco")
+    pyautogui.write(tabela.loc[linha, "preco_unitario"])
     pyautogui.press("tab")
 
-    pyautogui.write("Custo")
+    pyautogui.write(tabela.loc[linha, "custo"])
     pyautogui.press("tab")
 
-    pyautogui.write("OBS")
+    pyautogui.write(tabela.loc[linha, "obs"])
 
     pyautogui.click(x=1190, y=939)
 
