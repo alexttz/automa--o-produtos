@@ -38,24 +38,25 @@ for linha in tabela.index:
     codigo = tabela.loc[linha, "codigo"]
     
     pyautogui.click(x=1077, y=293)
-    pyautogui.write("Código Produto")
 
+    pyautogui.write(codigo)
     pyautogui.press("tab")
+ 
     pyautogui.write("Marca")
-
     pyautogui.press("tab")
+
     pyautogui.write("Tipo")
-
     pyautogui.press("tab")
+
     pyautogui.write("Categoria")
-
     pyautogui.press("tab")
+
     pyautogui.write("Preco")
-
     pyautogui.press("tab")
+
     pyautogui.write("Custo")
-
     pyautogui.press("tab")
+
     pyautogui.write("OBS")
 
     pyautogui.click(x=1190, y=939)
