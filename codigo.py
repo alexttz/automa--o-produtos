@@ -29,7 +29,7 @@ time.sleep(3)
 
 #Importar dados
 import pandas
-tabela = pandas.read_csv('automacao-produtos/produtos.csv')
+tabela = pandas.read_csv('produtos.csv')
 
 #Escrevendo os produtos
 
@@ -55,9 +55,9 @@ for linha in tabela.index:
     pyautogui.write(str(tabela.loc[linha, "custo"]))
     pyautogui.press("tab")
 
-    pyautogui.write(tabela.loc[linha, "obs"])
+    pyautogui.write(str(tabela.loc[linha, "obs"]))
 
-    pyautogui.click(x=1190, y=939)
+    pyautogui.click(x=1196, y=767)
 
     pyautogui.scroll(5000)
 
