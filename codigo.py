@@ -46,13 +46,13 @@ for linha in tabela.index:
     pyautogui.write(tabela.loc[linha, "tipo"])
     pyautogui.press("tab")
 
-    pyautogui.write(tabela.loc[linha, "categoria"])
+    pyautogui.write(str(tabela.loc[linha, "categoria"]))
     pyautogui.press("tab")
 
-    pyautogui.write(tabela.loc[linha, "preco_unitario"])
+    pyautogui.write(str(tabela.loc[linha, "preco_unitario"]))
     pyautogui.press("tab")
 
-    pyautogui.write(tabela.loc[linha, "custo"])
+    pyautogui.write(str(tabela.loc[linha, "custo"]))
     pyautogui.press("tab")
 
     pyautogui.write(tabela.loc[linha, "obs"])
