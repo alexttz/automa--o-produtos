@@ -6,7 +6,7 @@ link = "https://dlp.hashtagtreinamentos.com/python/intensivao/login"
 
 pyautogui.PAUSE = 0.5
 
-#Abrir o navegador Chrome:1
+#Abrir o navegador Chrome:
 pyautogui.press("win")
 pyautogui.write("chrome")
 pyautogui.press("enter")   
@@ -63,4 +63,3 @@ for linha in tabela.index:
     pyautogui.press("tab")
     pyautogui.press("enter")
     pyautogui.scroll(5000)
-
